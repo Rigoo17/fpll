@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fpll Website</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png.webp">
+</head>
+<body>
+   
+   <div class="container">
+   
+        <div class="form-box login">
+            <form>
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                    <img src="eye-close.png" id="eye-icon" >
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Fpl playerId" required>
+                    <i class='bx bxs-user-check'></i>
+                </div>
+                <div class="forgot-link">
+                    <a href="#">Forgot Password</a>
+
+                </div>
+                <button type="button" class="btn"  onclick="redirectToPayment()">Login</button>
+
+                <div class="get-fplid-help">
+                    <a href="https://www.youtube.com/watch?v=5vXiVHdyxuY" target="_blank">Click here if you need assistance to get fpl id</a>
+                 </div>
+            </form>
+            
+        </div>
+        <div class="form-box register">
+            <form>
+                <h1>Registration</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" id="password" required>
+                    <img src="eye-close.png" id="eye-icon">
+                </div>
+             
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left">
+                <h1>Hello, Welcome!</h1>
+                <p>Don't have an account?</p>
+                <button class="btn register-btn">Register</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+                <h1>Welcome Back!</h1>
+                <p>Already have an account?</p>
+                <button class="btn login-btn">Login</button>
+            </div>
+        </div>
+   </div>
+
+  
+    
+     
+   <script src="script.js"></script>
+</body>
+</html>

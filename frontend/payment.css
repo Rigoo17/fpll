@@ -1,0 +1,325 @@
+
+:root {
+    --primary-color: #4ec1f7;
+    --button-color: rgb(18, 128, 231);
+    --gradient-bg: linear-gradient(to right, rgb(2, 239, 255), rgb(98, 123, 255));
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: black;
+    text-align: center;
+      }
+
+
+header {
+    background: var(--gradient-bg);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  
+}
+.upper-header{
+    background-color: black;
+
+}
+
+header nav  {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #f8f7fa;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header nav ul {
+    
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 0 ;
+    margin: 0;
+    border: 1px solid black;
+}
+
+header nav ul li {
+   margin: 2px;
+
+}
+
+header nav ul li a img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.lower-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: var(--gradient-bg);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.premier-league-lion {
+    position: absolute;
+    left:0;
+    cursor: pointer;
+    
+
+}
+
+h1 {
+    margin-bottom: 5px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+h2.subheader {
+    font-size: 38px;
+    margin-top: 0;
+}
+
+.pictures-header img {
+    width: 100%;
+    height: 650px; 
+    display: block; 
+    object-fit: cover;
+}
+
+
+.welcome {
+    text-align: left;
+    padding-left: 10px;
+    font-size: 24px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+
+
+.rules {
+    width: 60%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.rules ul {
+    width: 60%;
+    padding-left: 20px;
+    font-size: 22px; 
+}
+ 
+.parent-container{
+    
+    width: 500px;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ .payment {
+    background:  #4ec1f7;
+    color: black;
+    margin: 0;
+    padding: 25px;
+    border-radius: 15px;
+    width:90%;
+    max-width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.payment input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+
+.payment button {
+        margin-top: 15px;
+        padding: 12px 25px;
+        background: var(--button-color);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.2em;
+    
+    
+}
+
+.payment button:hover {
+    background: rgb(12, 108, 200);
+}
+
+.payment button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.countdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown-clock{
+    font-size: 40px;
+
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: var(--gradient-bg);
+    font-size: 25px;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+
+       html, body{
+        overflow-x: hidden; /* Prevents horizontal scrolling */
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h2.subheader {
+        font-size: 30px;
+    }
+
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+}
+
+/* Mobile View (Phones) */
+@media screen and (max-width: 768px) {
+    html, body{
+        overflow-x: hidden; /* Prevents horizontal scrolling */
+        width: 100%;
+    }
+
+    header nav ul {
+        display:none;
+    }
+
+    .lower-header{
+        display: flex;
+        align-items: center;
+    }
+
+    .premier-league-lion img {
+        width: 80px;
+        height: auto;
+        margin-right: auto;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2.subheader {
+        font-size: 15px;
+    }
+
+    .pictures-header img {
+        height: 300px; 
+        object-fit: cover;
+    }
+
+    .main-container {
+        width: 100%;;
+    }
+
+    .rules {
+        width: 100%;
+        font-size: 20px;
+     
+       
+    }
+
+    .rules ul {
+        width: 100%;
+        max-width: 90%;
+
+    }
+    
+    
+
+
+}
+
+/* Small Phones (below 480px) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .pictures-header img {
+        height: 200px;
+    }
+
+    .payment input {
+        width: 100%;
+    }
+
+    .countdown-clock {
+        font-size: 24px;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+}

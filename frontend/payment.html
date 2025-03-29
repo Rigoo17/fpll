@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPL Payment Page</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+
+    
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://www.google.com/search?q=arsenal" target="_blank"><img src="./Arsenal-Logo.png"></a></li>
+                <li><a href="https://www.google.com/search?q=aston+villa" target="_blank"><img src="./Aston-villa-logo.png"></a></li>
+                <li><a href="https://www.google.com/search?q=bournemouth" target="_blank"><img src="./bournemouth-logo.png"></a></li>
+                <li><a href="https://www.google.com/search?q=brentford" target="_blank"><img src="./Brentford-logo.png"></a></li>
+                <li><a href="https://www.google.com/search?q=brighton" target="_blank"><img src="./brighton-logo.png"></a></li>
+                <li><a href="https://www.google.com/search?q=chelsea" target="_blank"><img src="./Chelsea-logo.png"></a></li>
+                <li><a href="https://www.google.com/search?q=crystal+palace" target="_blank"><img src="./Crystal-Palace-logo.png"></a></li>
+                <li><a href="https://www.google.com/search?q=everton" target="_blank"><img src="./Everton-logo.png"></a></li>
+                <li><a href="https://www.google.com/search?q=fulham" target="_blank"><img src="./fulham-logo.png"></a></li>
+                <li><a href="https://www.google.com/search?q=ipswich" target="_blank"><img src="./Ipswich-logo.png"></a></li>
+                <li><a href="https://www.google.com/search?q=leicester" target="_blank"><img src="./leicester-logo.png"></a></li>
+                <li><a href="https://www.google.com/search?q=liverpool" target="_blank"><img src="./liverpool-logo.png"></a></li>
+                <li><a href="https://www.google.com/search?q=Manchester+city" target="_blank"><img src="./Manchester-City-logo.png"></a></li>
+                <li><a href="https://www.google.com/search?q=Manchester+united" target="_blank"><img src="./Manchester-United-logo.png"></a></li>
+                <li><a href="https://www.google.com/search?q=newcastle" target="_blank"><img src="./Newcastle-logo.png"></a></li>
+                <li><a href="https://www.google.com/search?q=nottingham+forest" target="_blank"><img src="./Nottingham-Forest-logo.png"></a></li>
+                <li><a href="https://www.google.com/search?q=Southampton" target="_blank"><img src="./Southampton-logo.png"></a></li>
+                <li><a href="https://www.google.com/search?q=tottenham+hotspur" target="_blank"><img src="./Tottehnam-Hotspur-logo.png"></a></li>
+                <li><a href="https://www.google.com/search?q=west+ham" target="_blank"><img src="./West-Ham-logo.png"></a></li>
+                <li><a href="https://www.google.com/search?q=Wolves" target="_blank"><img src="./Wolves-logo.png"></a></li>
+
+            </ul>
+    
+        </nav>
+       
+      <div class="lower-header">
+          <div class="premier-league-lion">
+            <a href="https://www.google.com/search?q=premier+league" target="_blank">
+            <img src="premier league logo.png" class="logo"></a>
+        </div>
+        <div >
+            <h1>FPLL Website</h1>
+            <h2 class="subheader">Making Football More Fun</h2>
+        </div>
+      </div>
+    </header>
+
+    <main>
+        <div class="pictures-header">
+            <img src="Ethan-Nwaneri.png">
+        </div>
+        <section class="welcome">
+            <h2>Welcome, Steve!</h2>
+        </section>
+
+        <div class="main-container">
+            <section class="rules">
+                <h3><b>Game Rules and Regulations</b></h3>
+                <ul>
+                    <li>The competition lasts one gameweek.</li>
+                    <li>Players are randomly assigned to leagues of 10 players.</li>
+                    <li>The player with the highest points per group collects the reward.</li>
+                    <li>In case of a tie, bench points are considered.</li>
+                    <li>Cheats like Bench Boost, Triple Captain, and FPL Manager are allowed to improve your chances of winning.</li>
+                    <li>Entry fee: <strong>Kshs 50</strong></li>
+                    <li>The website retains <strong>10%</strong> of the entry fee as its commission.</li>
+                    <li>Players must register before the deadline: <strong>2 hours before the first game begins.</strong></li>
+                </ul>
+            </section>
+            
+            <section class="parent-container">
+
+                <section class="payment">
+                    <h3>Make Your Payment</h3>
+                    <input type="tel" id="phoneNumber" placeholder="Enter M-Pesa Number" maxlength="10">
+                    <p id="errorMessage" class="error-message"></p>
+                    <button id="payButton" disabled>Pay Now</button>
+                </section>
+                
+                <section class="countdown">
+                    <h1>Deadline</h1>
+                    <br>
+                    <div class="countdown-clock">
+    
+                    </div>
+    
+                </section>
+            </section>
+            
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>Good Luck!</p>
+    </footer>
+
+    <script src="payment.js"></script>
+</body>
+</html>
